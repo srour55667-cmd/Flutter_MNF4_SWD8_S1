@@ -22,8 +22,7 @@ class NewsService {
           title: articleMap['title'] ?? "no title",
           description: articleMap['description'] ?? "no desc",
           url: articleMap['url'] ?? "",
-          urlToImage:
-              articleMap['urlToImage'] ??
+          urlToImage: articleMap['urlToImage'] ??
               "https://tse1.mm.bing.net/th/id/OIP.1giPAI3L-CVukyQUZZ6qXgHaFj?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3",
           publishedAt: articleMap['publishedAt'] ?? "000",
         );

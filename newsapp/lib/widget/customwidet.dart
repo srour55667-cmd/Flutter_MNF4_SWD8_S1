@@ -51,7 +51,6 @@ class Customwidet extends StatelessWidget {
                     color: Colors.red,
                   ),
                 ),
-
                 Text(
                   moodel.publishedAt,
                   style: TextStyle(color: Colors.red, fontSize: 10),

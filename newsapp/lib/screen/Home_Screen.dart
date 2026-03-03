@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:newsapp/servec/newsApp.dart';
-// import 'package:newsapp/api/models.dart';
 import 'package:newsapp/widget/customwidet.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -11,9 +10,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  // late Future<List<model>> futureNews;
-  // List<model> article = [];
-
   @override
   void initState() {
     super.initState();
@@ -21,7 +17,6 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Future<void> getnew() async {
-    // article = await NewsService().getnews();
     setState(() {});
   }
 
@@ -66,17 +61,14 @@ class _HomeScreenState extends State<HomeScreen> {
           }
         },
       ),
-
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: index,
-        onTap:
-            (value) => setState(() {
-              index = value;
-            }),
+        onTap: (value) => setState(() {
+          index = value;
+        }),
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.blue,
         unselectedItemColor: Colors.grey,
-
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'general'),
           BottomNavigationBarItem(icon: Icon(Icons.sports), label: 'Sports'),
